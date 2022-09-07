@@ -39,7 +39,7 @@ git commit -m "Mensagem explicativa"
 
 git branch -M main
 
-git reomote add origin git@github.com:seuusuario/seurepositorio.git
+git remote add origin git@github.com:seuusuario/seurepositorio.git
 
 git push -u origin main 
 
