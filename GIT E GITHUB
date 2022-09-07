@@ -1,0 +1,101 @@
+GIT E GITHUB (Anotações.)
+
+video do DevSuperior
+
+
+configurar o git:
+
+git config --global user.name "nome do usuário"
+
+$ git config --global user.email "teuemail@gmail.com"
+
+
+git config --list (para conferir seu user e email)
+
+configuração para ver arquivos ocultos (windows)
+
+> ir nas config do opções do explorador do windows
+
+
+configurar chave SSH para o github
+
+SSH é um protocolo para comunicação de dados com segurança
+o github aboliu a autenticação somente com usuário e senha
+
+a ideia basica é cadastrar previamente quais computadores podem acessar o github em seu nome. outros computadores não conseguem acessar
+
+para isso vc deve:
+
+1. gerar uma chave ssh no seu computador
+2. cadastrar essa chave no seu github
+
+salvar primeira versao de um projeto no git
+
+git init
+
+git add .
+
+git commit -m "Mensagem explicativa"
+
+git branch -M main
+
+git reomote add origin git@github.com:seuusuario/seurepositorio.git
+
+git push -u origin main 
+
+salvar segunda versao (atualizar versao)
+
+git status
+
+git add . 
+
+git commit -m "Mensagem explicativa"
+
+git push
+
+comandos:
+
+ls - para ver que arquivos estão na pasta
+
+------------------------------------------------------
+
+> Git terminal
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
